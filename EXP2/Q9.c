@@ -1,8 +1,8 @@
-// Design a structure ‘product’ to store the details of the product purchased like product name, price per unit, the number of quantities purchased, and amount spent. Get the name, price per unit, and the number of quantities of the product purchased. Calculate the amount spent on the product and then display all the details of the procured product using structure pointers.
+// Design a union ‘product’ to store the details of the product purchased like product name, price per unit, the number of quantities purchased, and amount spent. Get the name, price per unit, and the number of quantities of the product purchased. Calculate the amount spent on the product and then display all the details of the procured product using structure pointers.
 
 #include <stdio.h>
 
-struct product
+union product
 {
     char name[20];
     float price;
@@ -12,8 +12,8 @@ struct product
 
 void main()
 {
-    struct product *p;
-    p = (struct product *)malloc(sizeof(struct product));
+    union product *p;
+    p = (union product *)malloc(sizeof(union product));
     printf("Enter the name of the product: ");
     scanf("%s", p->name);
     printf("Enter the price per unit: ");
