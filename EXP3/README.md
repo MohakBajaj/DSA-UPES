@@ -6,6 +6,8 @@
 - perform the merging the two linked list into one
 - perform the copying of the one Linked List into another
 - perform the searching operation in Linked List
+- Implement Circular Linked List and its operations.
+- Implement Doubly Linked List and its operations
 
 
  
